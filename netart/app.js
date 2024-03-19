@@ -98,11 +98,11 @@ class Button {
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
-                    let nameelement = select('#activity-name')
-                    nameelement.html(data.activity);
-                    //activity suggestion displays in the html , sound plays
+                    let nameelement = select('#activity-name') // selects the html element for the text
+                    nameelement.html(data.activity); 
+                    //activity suggestion from boredAPI displays in the html
                 })
-            // //audio effect:
+            //sound effect:
             let bling = document.getElementById("bling");
             bling.currentTime = 0; // resets the audio to the beginning so it plays every time u click
             bling.play();
