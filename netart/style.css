@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.container {
+    /* each section snaps to the screen when you scroll */
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.activity-info {
+    font-size: 30px;
+    color: rgb(170, 170, 170);
+    padding: 20px;
+    bottom: -100px;
+}
